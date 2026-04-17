@@ -37,3 +37,6 @@ A Chrome extension that captures browser console errors and analyzes them with G
 - Errors are stored locally in Chrome local storage
 - Only the error message and stack trace are sent to Gemini for analysis
 - No other data is collected or transmitted
+
+
+Link to the video https://www.loom.com/share/205ad66e712e464b9e35f5df79814584
