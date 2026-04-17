@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Console Error AI - Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#f44336" stroke-width="2">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8" x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <h1>Console Error AI</h1>
+    </div>
+    <p class="subtitle">Settings</p>
+
+    <div class="field">
+      <label for="api-key">Gemini API Key</label>
+      <div class="input-row">
+        <input type="password" id="api-key" placeholder="Enter your Gemini API key" autocomplete="off" />
+        <button id="toggle-visibility" title="Show/hide key" type="button">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+            <circle cx="12" cy="12" r="3"/>
+          </svg>
+        </button>
+      </div>
+      <p class="hint">Get your free key from <a href="https://aistudio.google.com/apikey" target="_blank">Google AI Studio</a></p>
+    </div>
+
+    <div class="field">
+      <label for="max-errors">Max stored errors</label>
+      <select id="max-errors">
+        <option value="50">50</option>
+        <option value="100" selected>100</option>
+        <option value="200">200</option>
+        <option value="500">500</option>
+      </select>
+    </div>
+
+    <div class="actions">
+      <button id="save-btn" class="btn-primary">Save Settings</button>
+      <button id="test-btn" class="btn-secondary">Test API Key</button>
+    </div>
+
+    <div id="status" class="status hidden"></div>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
